@@ -1,0 +1,206 @@
+.head{
+  width: 100%;
+  height: 13rem;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190625/ourmid/pngtree-blue-minimalist-medical-banner-image_261515.jpg");
+}
+
+.product_main{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+.product1{
+  width: 30%;
+  padding: 1rem;
+}
+.product2{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.product2 p{
+  color: black;
+}
+.product2 button{
+  width: 10rem;
+  height: 3rem;
+}
+
+@media screen and  (max-width:910px) {
+
+  .product_main{
+  display: flex;
+  flex-direction:column;
+  width: 80%;
+}
+
+}
+/* sidebar */
+nav [role="navigation"] {
+  background-color: red;
+  }
+  
+  nav > ul {
+    list-style-type:none;
+    background-color: green;
+    width: 100%;
+    margin:0;
+    padding:0;
+    display: none;
+  }
+  nav > ul li {
+    display:block;
+  }
+  nav > ul li a {
+    display:block;
+    min-width:140px;
+    padding: 1rem .8rem;
+    text-align: center;
+    color: #fff;
+    background: #009EE2;
+    -webkit-transition-property: background; /* Safari */
+    -webkit-transition-duration: .5s; /* Safari */
+    transition-property: background;
+    transition-duration: .5s;
+    text-decoration: none;
+  }
+  
+  li:hover a {
+    background: #0086CD;
+  }
+  /* Display 'show menu' link*/
+  .show-menu {
+  display:block;
+  }
+  
+  .show-menu {
+  text-decoration: none;
+  color: #fff;
+  background: #19c589;
+  text-align: center;
+  padding: 10px 0;
+  }
+  
+  input[type=checkbox]{
+  display: none;
+  }
+  
+  /*Show menu when invisible checkbox is checked*/
+  input[type=checkbox]:checked ~ ul {
+      display: block;
+  }
+  
+  @media screen and (min-width: 48em) {
+  nav > ul {
+  display: block;
+  width: 10%;
+  }
+ 
+   /* Hide button show-menu */
+   .show-menu {
+  display: none;
+  }
+  }
+
+
+  /* sidebar start */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+ 
+  ::selection{
+    background: rgba(23,162,184,0.3);
+  }
+  .wrapper{
+    width: 90%;
+    margin: 50px auto;
+    padding: 25px 30px 30px 30px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  }
+  .wrapper nav{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  .wrapper nav label{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    color: #17a2b8;
+    font-size: 17px;
+    border-radius: 5px;
+    margin: 0 1px;
+    transition: all 0.3s ease;
+  }
+  .wrapper nav label:hover{
+    background: rgba(23,162,184,0.3);
+  }
+
+  nav label i{
+    padding-right: 7px;
+  }
+  input[type="radio"]{
+    display: none;
+  }
+  #Elisa:checked ~ nav .slider{
+    left: 20%;
+  }
+  #Plasticwares:checked ~ nav .slider{
+    left: 40%;
+  }
+  #PCR:checked ~ nav .slider{
+    left: 60%;
+  }
+  #Instruments:checked ~ nav .slider{
+    left: 80%;
+  }
+  #Glasswares:checked ~ nav .slider{
+    left: 100%;
+  }
+  #Moliculer:checked ~ nav .slider{
+    left: 120%;
+  }
+  section .content{
+    display: none;
+    background: #fff;
+  }
+  #Antibodies:checked ~ section .content-1,
+  #Elisa:checked ~ section .content-2,
+  #Plasticwares:checked ~ section .content-3,
+  #PCR:checked ~ section .content-4,
+  #Instruments:checked ~ section .content-5,
+  #Glasswares:checked ~ section .content-6,
+  #Moliculer:checked ~ section .content-7{
+    display: block;
+  }
+  section .content .title{
+    font-size: 21px;
+    font-weight: 100;
+    margin: 50px 0 10px 0;
+  }
+  section .content p{
+  text-align: justify;
+  color: black;
+  }
+
+  @media screen and (max-width:910px){
+    .wrapper nav{
+      display: flex;
+      flex-direction: column;
+    }
+    .wrapper nav label{
+      text-align: left;
+    }
+    section .content{
+      margin-top: 400px;
+    }
+  }

@@ -1,0 +1,35 @@
+.main1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+}
+.main1 h2{
+    margin: 3rem 0;
+    text-align: center;
+    font-size: 2rem;
+    color: darkblue;
+    font-weight: 600;
+}
+.main1 img{
+    width: 35rem;
+    justify-items: center;
+    margin: 1rem auto;
+}
+.main1 p{
+    text-align: justify;
+    color: black;
+}
+
+.head{
+    width: 100% !important;
+    height: 13rem;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background: url("https://png.pngtree.com/background/20210711/original/pngtree-healthcare-medical-poster-background-picture-image_1092367.jpg");
+  }
+  .head h1{
+    padding-top: 2rem;
+  }
+  
